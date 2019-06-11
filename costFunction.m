@@ -1,8 +1,6 @@
 function [J, grad] = costFunction(theta, X, y)
 
 m = length(y); % number of training examples
-
-
 J = 0;
 grad = zeros(size(theta));
 h_theta = sigmoid(X * theta);
